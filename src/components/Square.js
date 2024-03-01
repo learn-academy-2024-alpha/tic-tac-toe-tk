@@ -1,8 +1,14 @@
-import React from 'react'
+import React from "react"
 
-const Square = (props) => {
+const Square = ({ takeTurn, index, value }) => {
+  const handleClick = () => {
+    takeTurn(index)
+  }
+
   return (
-    <div className="square"></div>
+    <div className="square" onClick={handleClick}>
+      {value}
+    </div>
   )
 }
 export default Square
