@@ -1,5 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .square {
   border: 2px solid black;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  font-size: 10rem;
+  color: #fff;
+}
+
+.board {
+  height: 610px;
+  width: 610px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-image: url("./assets/hogwarts.jpeg");
+}
+
+h1 {
+  text-align: center;
+}
+
+.winner {
+  color: green;
+}
+
+.restart {
+  margin: 2px auto;
+  padding: 2px;
 }
